@@ -10,7 +10,7 @@ jobs:
     - name: phpunit
       run: |
         php -v
-        cd app
+        cd php-test-example
         docker-compose up -d
         composer install
         docker-compose exec -T php bash -c "vendor/bin/phpunit"
