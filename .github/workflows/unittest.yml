@@ -16,4 +16,4 @@ jobs:
         cd framework
         composer install
         cd ..
-        docker-compose exec -T php bash -c "vendor/bin/phpunit"
+        docker-compose exec -T php bash -c "vendor/bin/phpunit tests"
