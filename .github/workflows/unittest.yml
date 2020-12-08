@@ -11,7 +11,7 @@ jobs:
     - name: phpunit
       run: |
         php -v
-        cd php-test-example
+        pwd
         docker-compose up -d
         cd framework
         composer install
